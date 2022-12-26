@@ -70,7 +70,11 @@ public class TracingConfig {
 
 ### Useful links:
 [Official migration guide](https://github.com/micrometer-metrics/tracing/wiki/Spring-Cloud-Sleuth-3.1-Migration-Guide)
+
 [Official docs for Micrometer Tracing](https://micrometer.io/docs/tracing)
+
 [B3 propagation definition](https://github.com/openzipkin/b3-propagation)
+
 [Observability in Spring Boot 3 review](https://spring.io/blog/2022/10/12/observability-with-spring-boot-3)
+
 [Beginner's guide to Micrometer Tracing](https://springbootlearning.medium.com/using-micrometer-to-trace-your-spring-boot-app-1fe6ff9982ae)
