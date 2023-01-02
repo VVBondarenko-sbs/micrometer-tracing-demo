@@ -2,17 +2,19 @@ package com.sainsburys.micrometertracingdemo;
 
 import brave.propagation.B3Propagation;
 import brave.propagation.Propagation;
-import io.micrometer.tracing.brave.bridge.W3CPropagation;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.autoconfigure.tracing.TracingProperties;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Primary;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
+@EnableScheduling
+@EnableAspectJAutoProxy
 public class MicrometerTracingDemoApplication {
 
   public static void main(String[] args) {

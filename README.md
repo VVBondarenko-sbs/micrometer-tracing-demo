@@ -68,6 +68,13 @@ public class TracingConfig {
 </tbody>
 </table>
 
+### Known limitations
+- Currently, annotations `io.micrometer.tracing.annotation.NewSpan` and `io.micrometer.tracing.annotation.ContinueSpan`
+are not working (=> you'll have to write custom aspect to process them)
+- Spans won't be started by default for methods annotated with `org.springframework.scheduling.annotation.Scheduled`
+and `org.springframework.scheduling.annotation.Async` => you have to define it manually
+
+
 ### Useful links:
 [Official migration guide](https://github.com/micrometer-metrics/tracing/wiki/Spring-Cloud-Sleuth-3.1-Migration-Guide)
 [Official docs for Micrometer Tracing](https://micrometer.io/docs/tracing)
